@@ -80,7 +80,7 @@ export default {
     height: calc(100% - 65px);
 
     @include media-breakpoint-down(sm) {
-      height: calc(100% - 110px);
+      height: calc(100% - 60px);
     }
   }
 

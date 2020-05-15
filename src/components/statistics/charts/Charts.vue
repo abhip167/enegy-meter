@@ -86,29 +86,29 @@ import { hex2rgb } from '@/services/vuestic-ui'
 
 import { getLineChartData2019 } from '../../../data/charts/LineChartData2019'
 import { getLineChartData2018 } from '../../../data/charts/LineChartData2018'
-import { getBubbleChartData } from '../../../data/charts/BubbleChartData'
-import { getPieChartData } from '../../../data/charts/PieChartData'
-import { getDonutChartData } from '../../../data/charts/DonutChartData'
-import { getVerticalBarChartData } from '../../../data/charts/VerticalBarChartData'
-import { getHorizontalBarChartData } from '../../../data/charts/HorizontalBarChartData'
-import LineChart from '@/data/charts/realTimeChartData.js'
+// import { getBubbleChartData } from '../../../data/charts/BubbleChartData'
+// import { getPieChartData } from '../../../data/charts/PieChartData'
+// import { getDonutChartData } from '../../../data/charts/DonutChartData'
+// import { getVerticalBarChartData } from '../../../data/charts/VerticalBarChartData'
+// import { getHorizontalBarChartData } from '../../../data/charts/HorizontalBarChartData'
+// import LineChart from '@/data/charts/realTimeChartData.js'
 import machineDataFeb from './machineDataFeb'
 import machineDataApril from './machineDataApril'
 
 export default {
   name: 'charts',
   components: {
-    LineChart,
+    // LineChart,
     machineDataFeb,
     machineDataApril,
   },
   data () {
     return {
-      bubbleChartData: getBubbleChartData(this.$themes),
+      // bubbleChartData: getBubbleChartData(this.$themes),
       lineChartData2019: getLineChartData2019(this.$themes),
       lineChartData2018: getLineChartData2018(this.$themes),
-      verticalBarChartData: getVerticalBarChartData(this.$themes),
-      horizontalBarChartData: getHorizontalBarChartData(this.$themes),
+      // verticalBarChartData: getVerticalBarChartData(this.$themes),
+      // horizontalBarChartData: getHorizontalBarChartData(this.$themes),
       lineChartOptions: {
         legend: {
           labels: {
@@ -167,9 +167,6 @@ export default {
     }
   },
   methods: {
-    refreshData () {
-      this.lineChartData = getLineChartData(this.$themes)
-    },
     fillData () {
       if (this.updatedData1.length && this.updatedData2.length === 15) {
         this.updatedData1 = []

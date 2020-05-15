@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import VaIconVuestic from '../../iconset/VaIconVuestic'
 
 const tabs = [
   'login',
@@ -35,7 +34,7 @@ const tabs = [
 
 export default {
   name: 'AuthLayout',
-  components: { VaIconVuestic },
+  components: {},
   data () {
     return {
       selectedTabIndex: 0,
