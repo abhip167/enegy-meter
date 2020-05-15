@@ -5,8 +5,7 @@
 
 <p align="center">
   Inspired From Vueistic Admin Theme</br>
-  Developed by  <a href="https://epicmax.co">Epicmax</a>.
-  Designed by <a href="https://www.xxsavitski.com">Vasili Savitski</a>
+  Theme From: <a href="https://epicmax.co">Epicmax</a>, <a href="https://www.xxsavitski.com">Vasili Savitski</a>
 </p>
 
 ## License
