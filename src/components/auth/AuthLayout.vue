@@ -1,26 +1,23 @@
 <template>
   <div class="auth-layout row align-content--center">
     <div class="flex xs12 pa-3 flex-center">
-      <router-link class="py-5 flex-center" to="/">
-        <va-icon-vuestic />
-      </router-link>
+      <div class="py-5 flex-center">
+        <p class="display-1" :style="{color: this.$themes.info}">Energy Monitoring Dashboard</p>
+      </div>
     </div>
 
     <div class="flex xs12 pa-3">
       <div class="d-flex justify--center">
         <va-card class="auth-layout__card">
-          <va-tabs
-            v-model="tabIndex"
-            center
-          >
+          <va-tabs v-model="tabIndex" center>
             <va-tab>{{ $t('auth.login') }}</va-tab>
             <va-tab>{{ $t('auth.createNewAccount') }}</va-tab>
           </va-tabs>
 
-          <va-separator/>
+          <va-separator />
 
           <div class="pa-3">
-            <router-view/>
+            <router-view />
           </div>
         </va-card>
       </div>

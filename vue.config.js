@@ -64,12 +64,12 @@ module.exports = {
           '@import "~vuestic-ui/src/components/vuestic-sass/resources/resources.scss";'
       }
     }
-  },
-  pwa: {
-    workboxPluginMode: "InjectManifest",
-    workboxOptions: {
-      swSrc: "./src/service-worker.js",
-      importWorkboxFrom: "local"
-    }
   }
+  // pwa: {
+  //   workboxPluginMode: "InjectManifest",
+  //   workboxOptions: {
+  //     swSrc: "./src/service-worker.js",
+  //     importWorkboxFrom: "local"
+  //   }
+  // }
 };

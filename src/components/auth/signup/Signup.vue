@@ -28,9 +28,10 @@
           <span class="link">{{ $t('auth.termsOfUse') }}</span>
         </template>
       </va-checkbox>
-      <router-link class="ml-1 link" :to="{name: 'recover-password'}">
-        {{$t('auth.recover_password')}}
-      </router-link>
+      <router-link
+        class="ml-1 link"
+        :to="{name: 'recover-password'}"
+      >{{$t('auth.recover_password')}}</router-link>
     </div>
 
     <div class="d-flex justify--center mt-3">
@@ -60,7 +61,7 @@ export default {
       if (!this.formReady) {
         return
       }
-      this.$router.push({ name: 'dashboard' })
+      this.$router.push({ name: 'charts' })
     },
   },
   computed: {
