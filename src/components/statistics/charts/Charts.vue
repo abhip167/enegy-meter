@@ -2,14 +2,29 @@
   <div class="charts">
     <div class="row">
       <div class="flex md12 xs12">
-        <va-card class="chart-widget" justify="center">
-          <template slot="header">
-            <va-icon name="fa fa-2x fa-bolt mr-3" color="danger" />
-            <p class="mt-0 mb-0 mr-5 display-1">Power Statistics</p>
-            <va-button-toggle outline v-model="Monthmodel" :options="Monthoptions" color="warning" />
-            <p class="mt-0 mb-0 ml-5 display-4">[Month: {{ Monthmodel }}, 2020]</p>
-            <p class="mt-0 mb-0 ml-5 display-4">[Time: 23:59:00]</p>
-          </template>
+        <va-card>
+          <div class="row align--center mb-1">
+            <div class="flex xs12 sm3 md3">
+              <va-icon name="fa fa-2x fa-bolt mr-3" color="danger" />
+              <span class="mt-0 mb-0 display-1">Power Statistics</span>
+            </div>
+            <div class="flex xs12 sm3 md3">
+              <div class="d-flex justify--left">
+                <va-button-toggle
+                  outline
+                  v-model="Monthmodel"
+                  :options="Monthoptions"
+                  color="warning"
+                />
+              </div>
+            </div>
+            <div class="flex xs12 sm3 md3">
+              <span class="mt-0 mb-0 display-4">[Month: {{ Monthmodel }}, 2020]</span>
+            </div>
+            <div class="flex xs12 sm3 md3">
+              <span class="mt-0 mb-0 display-4">[Time: 23:59:00]</span>
+            </div>
+          </div>
         </va-card>
       </div>
     </div>
@@ -32,10 +47,22 @@
       <div class="flex md12 xs12">
         <va-card class="chart-widget">
           <template slot="header">
-            <va-icon name="fa fa-2x fa-bolt mr-3" color="danger" />
+            <!-- <va-icon name="fa fa-2x fa-bolt mr-3" color="danger" />
             <p class="mt-0 mb-0 mr-5 display-3 text-center">Yearly Power Data [ {{ model }} ]</p>
-            <va-button-toggle outline v-model="model" :options="options" color="info" />
+            <va-button-toggle outline v-model="model" :options="options" color="info" />-->
+            <div class="row align--center mb-1">
+              <div class="flex xs12 sm6 md6">
+                <va-icon name="fa fa-2x fa-bolt mr-3" color="danger" />
+                <span class="mt-0 mb-0 display-1">Yearly Power Data [ {{ model }} ]</span>
+              </div>
+              <div class="flex xs12 sm6 md6">
+                <div class="d-flex justify--left">
+                  <va-button-toggle outline v-model="model" :options="options" color="info" />
+                </div>
+              </div>
+            </div>
           </template>
+
           <va-chart
             :data="lineChartData2019"
             v-show="model == 2019"
@@ -188,7 +215,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 .chart-widget {
   .va-card__body {
     height: 550px;
@@ -197,5 +224,11 @@ export default {
 
 #pad-0 {
   padding: 0 1.05rem 1.05rem;
+}
+
+@include media-breakpoint-down(sm) {
+  // .display-4 {
+  //   font-size: 5px !important;
+  // }
 }
 </style>
