@@ -91,8 +91,8 @@ export default {
     max-height: 100%;
     min-height: 100%;
 
-    &--top {
-    }
+    // &--top {
+    // }
 
     &-layout {
       position: absolute;

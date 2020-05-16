@@ -83,28 +83,28 @@
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.KVA}"
                   >10</p>
-                  <p class="text--center display-5 mb-1">Machine 1</p>
+                  <p class="text--center display-5 mb-1">M 1</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.KW}"
                   >12.5</p>
-                  <p class="text--center display-5 no-wrap mb-1">Machine 2</p>
+                  <p class="text--center display-5 no-wrap mb-1">M 2</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.hours}"
                   >31.5</p>
-                  <p class="text--center display-5 mb-1">Machine 3</p>
+                  <p class="text--center display-5 mb-1">M 3</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.Kwh}"
                   >10</p>
-                  <p class="text--center display-5 mb-1">Machine 4</p>
+                  <p class="text--center display-5 mb-1">M 4</p>
                 </div>
                 <div
                   class="flex xs12 sm4"
@@ -135,28 +135,28 @@
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.KVA}"
                   >8</p>
-                  <p class="text--center display-5 mb-1">Machine 1</p>
+                  <p class="text--center display-5 mb-1">M 1</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.KW}"
                   >10</p>
-                  <p class="text--center display-5 no-wrap mb-1">Machine 2</p>
+                  <p class="text--center display-5 no-wrap mb-1">M 2</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.hours}"
                   >25</p>
-                  <p class="text--center display-5 no-wrap mb-1">Machine 3</p>
+                  <p class="text--center display-5 no-wrap mb-1">M 3</p>
                 </div>
                 <div class="flex xs12 sm2">
                   <p
                     class="display-3 mb-1 no-wrap text--center"
                     :style="{color: machineDataColors.Kwh}"
                   >8</p>
-                  <p class="text--center display-5 no-wrap mb-1">Machine 4</p>
+                  <p class="text--center display-5 no-wrap mb-1">M 4</p>
                 </div>
                 <div
                   class="flex xs12 sm4"
