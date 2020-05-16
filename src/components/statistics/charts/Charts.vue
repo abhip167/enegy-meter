@@ -43,6 +43,16 @@
         </va-card>
       </div>
     </div>
+    <transition name="fade">
+      <div class="row" v-if="model == 2019 && isVisible == true">
+        <div class="flex md12 xs12 mb-3">
+          <va-notification v-model="isVisible" color="danger" closeable>
+            <va-badge color="danger" class="mr-3">Danger</va-badge>
+            <span class="display-5">Increase Demand To Save Penalty.</span>
+          </va-notification>
+        </div>
+      </div>
+    </transition>
     <div class="row">
       <div class="flex md12 xs12">
         <va-card class="chart-widget">
@@ -164,6 +174,7 @@ export default {
         { label: 'Feb 2020', value: 'Feb' },
       ],
       Monthmodel: 'April',
+      isVisible: true,
     }
   },
   methods: {
@@ -227,5 +238,17 @@ export default {
   // .display-4 {
   //   font-size: 5px !important;
   // }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.8s;
+  max-height: 230px;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  max-height: 0;
 }
 </style>
