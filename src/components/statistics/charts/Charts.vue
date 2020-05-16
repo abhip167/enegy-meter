@@ -47,7 +47,7 @@
       <div class="row" v-if="model == 2019 && isVisible == true">
         <div class="flex md12 xs12 mb-3">
           <va-notification v-model="isVisible" color="danger" closeable>
-            <va-badge color="danger" class="mr-3">Danger</va-badge>
+            <va-badge color="danger" class="mr-3">Alert</va-badge>
             <div>
               <p class="display-5">Increase Demand To Save Penalty. Required Demand [65 KVA].</p>
 
