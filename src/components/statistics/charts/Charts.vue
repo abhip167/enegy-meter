@@ -48,7 +48,11 @@
         <div class="flex md12 xs12 mb-3">
           <va-notification v-model="isVisible" color="danger" closeable>
             <va-badge color="danger" class="mr-3">Danger</va-badge>
-            <span class="display-5">Increase Demand To Save Penalty.</span>
+            <div>
+              <p class="display-5">Increase Demand To Save Penalty. Required Demand [65 KVA].</p>
+
+              <p>( Value based on Data Analysis )</p>
+            </div>
           </va-notification>
         </div>
       </div>
